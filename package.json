@@ -1,4 +1,5 @@
 {
+	"author": "Praveen Kumar Singh",
 	"name": "neogwebpack",
 	"version": "1.0.0",
 	"description": "",
@@ -13,7 +14,6 @@
 		"build": "webpack",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "Praveen Kumar Singh",
 	"license": "MIT",
 	"devDependencies": {
 		"@babel/core": "^7.14.2",
