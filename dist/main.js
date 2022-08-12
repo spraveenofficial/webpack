@@ -16,7 +16,7 @@
   \********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nconst App = ({ name }) => {\r\n    return `\r\n    <h2> Welcome, ${name} </h2>\r\n    `;\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack://neogwebpack/./src/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar App = function App(_ref) {\n  var name = _ref.name;\n  return \"\\n    <h2> Welcome, \".concat(name, \" </h2>\\n    \");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack://neogwebpack/./src/App.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst App = ({ name }) => {\r
   \**********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App */ \"./src/App.js\");\n\r\n\r\nconst root = document.getElementById(\"root\");\r\n\r\nroot.innerHTML = `\r\n${(0,_App__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({ name: \"Praveen\" })}\r\n`;\n\n//# sourceURL=webpack://neogwebpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App */ \"./src/App.js\");\n\nvar root = document.getElementById(\"root\");\nroot.innerHTML = \"\\n\".concat((0,_App__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\n  name: \"Praveen\"\n}), \"\\n\");\n\n//# sourceURL=webpack://neogwebpack/./src/index.js?");
 
 /***/ })
 
