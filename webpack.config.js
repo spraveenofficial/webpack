@@ -6,11 +6,11 @@ const webpackConfig = {
     entry: path.resolve(__dirname, "src", "index.js"),
 
     output: {
-        path: path.resolve(__dirname, "dist"),
-        filename: "[name].bundle.js",
-        // Added Clean, this will remove the dist folder before building
-        clean: true,
-    },
+		filename: "[name].[contenthash].bundle.js",
+		path: path.resolve(__dirname, "dist"),
+        // Added clean dist folder before each build
+		clean: true
+	},
     module: {
         rules: [
             {
@@ -35,6 +35,7 @@ const webpackConfig = {
             }
         ]
     },
+    // Code Splitting aka splitting the code into multiple files
     optimization: {
         splitChunks: {
             cacheGroups: {
@@ -47,6 +48,10 @@ const webpackConfig = {
             }
         }
     },
+    devtool: "inline-source-map",
+	devServer: {
+		contentBase: "./dist"
+	},
     // Plugin for HTML Document Title
     plugins: [
         new HtmlWebpackPlugin({

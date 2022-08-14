@@ -4,9 +4,9 @@ import _ from "lodash";
 
 const App = ({ name }) => {
     return `
-    <img src="${img}" alt=""/>
-    <h2> Welcome, ${name} </h2>
     <h2> ${_.join(["Testing,", name], " ")} </h2>
+    <p>This is a paragraph for tesing webpack Configurations</p>
+    <p> Live Running Webpack Dev Server </p>
     `;
 };
 
